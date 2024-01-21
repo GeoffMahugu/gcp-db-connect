@@ -10,6 +10,10 @@ const client = new Client({
   port: 5432, // PostgreSQL default port
 });
 
+// // AS a Connection string - you will have to use pool function from PG instead of client function
+// const connectionString = `postgresql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_IP_ADDRESS}:5432/${process.env.DB_NAME}`;
+
+
 async function runQuery() {
   try {
     // Connect to the PostgreSQL database
